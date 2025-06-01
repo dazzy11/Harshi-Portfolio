@@ -1,6 +1,5 @@
 'use client';
 import styles from './Hero.module.css';
-import ParticleBackground from './ParticleBackground';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { Typewriter } from 'react-simple-typewriter';
@@ -9,7 +8,6 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 export default function Hero() {
   return (
     <div className={styles.background}>
-      <ParticleBackground />
       <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} glareEnable={true} glareColor="white">
         <motion.section className={styles.hero} initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
           <h1 className={styles.title}>HI, I'M HARSHITHA K! <span className={styles.wave}>👋</span></h1>
